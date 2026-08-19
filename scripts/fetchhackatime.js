@@ -1,11 +1,12 @@
+
 const fs = require("fs");
 const path = require("path");
 
-const USERNAME = "Astral_Scribe"; 
-const API_KEY = process.env.HACKATIME_API_KEY;
+const USERNAME = "Astral_Scribe"; // used for the public /stats call
+const OAUTH_TOKEN = process.env.HACKATIME_OAUTH_TOKEN;
 
-if (!API_KEY) {
-  console.error("Missing HACKATIME_API_KEY environment variable.");
+if (!OAUTH_TOKEN) {
+  console.error("Missing HACKATIME_OAUTH_TOKEN environment variable.");
   process.exit(1);
 }
 
@@ -32,7 +33,7 @@ async function fetchHours(startDate, endDate) {
   const url = `${AUTH_BASE}/hours?start_date=${startDate}&end_date=${endDate}`;
   const res = await fetch(url, {
     headers: {
-      Authorization: `Bearer ${API_KEY}`,
+      Authorization: `Bearer ${OAUTH_TOKEN}`,
       Accept: "application/json",
     },
   });

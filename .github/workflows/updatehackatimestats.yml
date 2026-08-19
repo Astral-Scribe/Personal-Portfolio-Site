@@ -22,7 +22,7 @@ jobs:
 
       - name: Fetch Hackatime stats
         env:
-          HACKATIME_API_KEY: ${{ secrets.HACKATIME_API_KEY }}
+          HACKATIME_OAUTH_TOKEN: ${{ secrets.HACKATIME_OAUTH_TOKEN }}
         run: node scripts/fetchhackatime.js
 
       - name: Commit updated data
