@@ -22,7 +22,7 @@ jobs:
 
       - name: Fetch GitHub contribution calendar
         env:
-          GITHUB_GRAPHQL_TOKEN: ${{ secrets.GITHUB_GRAPHQL_TOKEN }}
+          GRAPHQL_TOKEN: ${{ secrets.GRAPHQL_TOKEN }}
         run: node scripts/fetchgithubcontributions.js
 
       - name: Commit updated data
