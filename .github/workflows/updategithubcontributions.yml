@@ -1,0 +1,32 @@
+name: Update GitHub Contributions
+
+on:
+  schedule:
+    - cron: "0 6,18 * * *"   # twice a day — contribution counts don't need frequent polling
+  workflow_dispatch: {}       # allows manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-contributions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch GitHub contribution calendar
+        env:
+          GITHUB_GRAPHQL_TOKEN: ${{ secrets.GITHUB_GRAPHQL_TOKEN }}
+        run: node scripts/fetchgithubcontributions.js
+
+      - name: Commit updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update github contributions"
+          file_pattern: data/github-contributions.json

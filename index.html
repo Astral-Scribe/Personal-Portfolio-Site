@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>O White Development Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link id="mainstyle" rel="stylesheet" href="./lightmodestyle.css" />
+  </head>
+  <body>
+    <div class="headersection">
+      <div class="sitetitle">O White - Development Portfolio</div>
+      <div class="navbar">
+        <a class="navbar_item active" href="./index.html">Home</a>
+        <a class="navbar_item" href="./about.html">About</a>
+        <a class="navbar_item" href="./projects.html">Projects</a>
+        <a class="navbar_item" href="./blog.html">Blog</a>
+        <a class="navbar_item" href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h1>Hi, I'm O White</h1>
+      <p>A student with a passion for development and love of knowledge</p>
+      <div class="cta-buttons">
+        <a href="./projects.html" class="cta-button-1">View my work</a>
+        <a href="https://github.com/Astral-Scribe" class="cta-button-2">Github</a>
+      </div>
+    </div>
+    <div class="trackercards">
+      <div class="trackercard">
+        <div class="githubtracker">
+          <div id="gh-tracker">
+            <h3>Recent GitHub Activity <span class="gh-updated" id="gh-updated"></span></h3>
+            <div id="gh-tracker-body" class="gh-loading">Loading…</div>
+          </div>
+        </div>
+        <div class="commitgraph">
+          <div id="cg-card">
+            <div id="cg-header">
+              <span id="cg-title">Loading…</span>
+              <span id="cg-updated"></span>
+            </div>
+            <div id="cg-scroll">
+              <div id="cg-months"></div>
+              <div id="cg-grid-wrap">
+                <div id="cg-daylabels">
+                  <span></span><span>Mon</span><span></span><span>Wed</span><span></span><span>Fri</span><span></span>
+                </div>
+                <div id="cg-grid"></div>
+              </div>
+            </div>
+            <div id="cg-footer">
+              <span>Learn how contributions are counted</span>
+              <div id="cg-legend">
+                Less
+                <span class="cg-day" data-level="0"></span>
+                <span class="cg-day" data-level="1"></span>
+                <span class="cg-day" data-level="2"></span>
+                <span class="cg-day" data-level="3"></span>
+                <span class="cg-day" data-level="4"></span>
+                More
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trackercard">
+        <div class="hackatimedashboard">
+          <div id="hd-dashboard">
+            <h1>Hackatime Activity</h1>
+            <div id="hd-updated">Loading…</div>
+            <div class="hd-tabs" id="hd-tabs"></div>
+            <div class="hd-card" id="hd-card">
+              <div class="hd-loading">Loading stats…</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footersection">
+      <div class="linksections">
+        <div class="linksection">
+          <h3>Navigate</h3>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="linksection">
+          <h3>More</h3>
+          <a>Add stuff here</a>
+        </div>
+        <div class="linksection">
+          <h3>Work</h3>
+          <a>add choice projects here</a>
+        </div>
+        <div class="linksection">
+          <h3>Socials</h3>
+          <a href="https://github.com/Astral-Scribe"><img src="./images/icons/github_icon.png" alt="" class="socialicon" data-icon="github"/>GitHub</a>
+          <a href="mailto:self-taught-scribe@outlook.com?subject=Reaching%20out%20from%20your%20portfolio"><img src="./images/icons/email_icon.png" alt="" class="socialicon" data-icon="email"/>Email</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 O White</p>
+      <div class="themeswitcher">
+        <button class="theme-button" id="light-button" aria-label="Light mode">
+          <img src="./images/icons/sun_icon.png" alt="" class="theme-icon">
+        </button>
+        <button class="theme-button" id="dark-button" aria-label="Dark mode">
+          <img src="./images/icons/moon_icon.png" alt="" class="theme-icon">
+        </button>
+        <button class="theme-button" id="system-button" aria-label="System mode">
+          <img src="./images/icons/computer_icon.png" alt="" class="theme-icon">
+        </button>
+      </div>
+    </div>
+    <script src="./scripts/theme.js"></script>  
+    <script src="./scripts/gitcommittracker.js"></script>
+    <script src="./scripts/githubcontributiongraph.js"></script>
+    <script src="./scripts/hackatimedashboard.js"></script>
+  </body>
+</html>

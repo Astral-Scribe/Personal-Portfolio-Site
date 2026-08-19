@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Projects - O White Development Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link id="mainstyle" rel="stylesheet" href="./lightmodestyle.css" />
+  </head>
+  <body>
+    <div class="headersection">
+      <div class="sitetitle">O White - Development Portfolio</div>
+      <div class="navbar">
+        <a class="navbar_item" href="./index.html">Home</a>
+        <a class="navbar_item" href="./about.html">About</a>
+        <a class="navbar_item active" href="./projects.html">Projects</a>
+        <a class="navbar_item" href="./blog.html">Blog</a>
+        <a class="navbar_item" href="./contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="hero">
+      <h1>Projects</h1>
+      <p>Projects I have worked on or are currently developing</p>
+    </div>
+    <div class="projectssection">
+      <div class="filtercontrols">
+        <div class="tagfilter" id="tagfilter">
+          <button type="button" class="tagpill" data-tag="html">
+            <img src="./images/icons/tags/html_icon.png" alt="" class="tagicon" data-icon="tag-html">
+            HTML
+          </button>
+          <button type="button" class="tagpill" data-tag="css">
+            <img src="./images/icons/tags/css_icon.png" alt="" class="tagicon" data-icon="tag-css">
+            CSS
+          </button>
+          <button type="button" class="tagpill" data-tag="javascript">
+            <img src="./images/icons/tags/javascript_icon.png" alt="" class="tagicon" data-icon="tag-javascript">
+            JavaScript
+          </button>
+          <button type="button" class="tagpill" data-tag="web-dev">
+            <img src="./images/icons/tags/web-dev_icon.png" alt="" class="tagicon" data-icon="tag-web-dev">
+            Web Development
+          </button>
+          <button type="button" class="tagpill" data-tag="python">
+            <img src="./images/icons/tags/python_icon.png" alt="" class="tagicon" data-icon="tag-python">
+            Python
+          </button>
+        </div>
+        <button class="sorttoggle" id="sorttoggle">Sort: Newest First</button>
+      </div>
+      <div id="cardcontainer" class="projectscardcontainer"></div>
+    </div>
+    <div class="footersection">
+      <div class="linksections">
+        <div class="linksection">
+          <h3>Navigate</h3>
+          <a href="./index.html">Home</a>
+          <a href="./about.html">About</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./blog.html">Blog</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="linksection">
+          <h3>More</h3>
+          <a>Add stuff here</a>
+        </div>
+        <div class="linksection">
+          <h3>Work</h3>
+          <a>add choice projects here</a>
+        </div>
+        <div class="linksection">
+          <h3>Socials</h3>
+          <a href="https://github.com/Astral-Scribe"><img src="./images/icons/github_icon.png" alt="" class="socialicon" data-icon="github"/>GitHub</a>
+          <a href="mailto:self-taught-scribe@outlook.com?subject=Reaching%20out%20from%20your%20portfolio"><img src="./images/icons/email_icon.png" alt="" class="socialicon" data-icon="email"/>Email</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 O White</p>
+      <div class="themeswitcher">
+        <button class="theme-button" id="light-button" aria-label="Light mode">
+          <img src="./images/icons/sun_icon.png" alt="" class="theme-icon">
+        </button>
+        <button class="theme-button" id="dark-button" aria-label="Dark mode">
+          <img src="./images/icons/moon_icon.png" alt="" class="theme-icon">
+        </button>
+        <button class="theme-button" id="system-button" aria-label="System mode">
+          <img src="./images/icons/computer_icon.png" alt="" class="theme-icon">
+        </button>
+      </div>
+    </div>
+    <script src="./scripts/theme.js"></script>
+    <script src="./scripts/projects.js"></script>
+  </body>
+</html>

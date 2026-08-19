@@ -1,0 +1,30 @@
+[
+        {
+            "id": "05102023-A",
+            "title": "HTML Basics",
+            "description": "Learn the fundamentals of HTML.",
+            "tags": ["html", "web-dev"],
+            "date": "2023-10-05T12:34:56Z"
+        },
+        {
+            "id": "12102023-A",
+            "title": "CSS Layout Techniques",
+            "description": "Master modern CSS layout methods.",
+            "tags": ["css", "web-dev"],
+            "date": "2023-10-12T09:15:30Z"
+        },
+        {
+            "id": "18102023-A",
+            "title": "JavaScript ES6 Features",
+            "description": "Explore modern JavaScript features.",
+            "tags": ["javascript", "web-dev"],
+            "date": "2023-10-18T14:22:45Z"
+        },
+        {
+            "id": "25102023-A",
+            "title": "Python for Web Development",
+            "description": "Using Python to build web applications.",
+            "tags": ["python", "web-dev"],
+            "date": "2023-10-25T16:30:00Z"
+        }
+    ]
