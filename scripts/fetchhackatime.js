@@ -1,5 +1,3 @@
-
-
 const fs = require("fs");
 const path = require("path");
 
@@ -34,7 +32,7 @@ async function fetchHours(startDate, endDate) {
   const url = `${AUTH_BASE}/hours?start_date=${startDate}&end_date=${endDate}`;
   const res = await fetch(url, {
     headers: {
-      Authorization: `Basic ${Buffer.from(API_KEY).toString("base64")}`,
+      Authorization: `Bearer ${API_KEY}`,
       Accept: "application/json",
     },
   });
