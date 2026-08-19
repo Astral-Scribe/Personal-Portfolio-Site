@@ -1,0 +1,50 @@
+{
+  "last_updated": "2026-08-19T23:31:04.921Z",
+  "today": {
+    "total_seconds": 0,
+    "human": "0h 0m"
+  },
+  "week": {
+    "total_seconds": 0,
+    "human": "0h 0m"
+  },
+  "month": {
+    "total_seconds": 22233,
+    "human": "6h 10m"
+  },
+  "year": {
+    "total_seconds": 32229,
+    "human": "8h 57m"
+  },
+  "all_time": {
+    "total_seconds": 32229,
+    "human": "8h 57m 9s",
+    "top_projects": [
+      {
+        "name": "NCEA-Level-1-Computer-Science",
+        "seconds": 21993,
+        "human": "6h 6m"
+      },
+      {
+        "name": "shops",
+        "seconds": 3638,
+        "human": "1h"
+      },
+      {
+        "name": "Restaurant_site",
+        "seconds": 2045,
+        "human": "34m"
+      },
+      {
+        "name": "metroidvania-rpg-game",
+        "seconds": 1585,
+        "human": "26m"
+      },
+      {
+        "name": "html stuff",
+        "seconds": 1338,
+        "human": "22m"
+      }
+    ]
+  }
+}
