@@ -24,6 +24,9 @@ jobs:
         env:
           HACKATIME_OAUTH_TOKEN: ${{ secrets.HACKATIME_OAUTH_TOKEN }}
         run: node scripts/fetchhackatime.js
+        
+      - name: Pull latest changes
+        run: git pull --rebase origin main
 
       - name: Commit updated data
         uses: stefanzweifel/git-auto-commit-action@v5
