@@ -31,12 +31,11 @@ function buildGrid(days) {
   monthsRow.innerHTML = "";
 
   const max = Math.max(...days.map((d) => d.count), 0);
-
-  let weekIndex = -1;
+  let weekIndex = 0;
   let lastMonthLabeled = -1;
 
-  days.forEach((day) => {
-    if (day.weekday === 0) weekIndex++;
+  days.forEach((day, i) => {
+    if (i > 0 && day.weekday === 0) weekIndex++;
 
     const cell = document.createElement("div");
     cell.className = "cg-day";
@@ -45,10 +44,9 @@ function buildGrid(days) {
     cell.style.gridRow = day.weekday + 1;
     cell.title = `${day.count} contribution${day.count !== 1 ? "s" : ""} on ${day.date}`;
     grid.appendChild(cell);
-
     // Label a month the first time we see its first week column
     const month = new Date(day.date).getUTCMonth();
-    if (month !== lastMonthLabeled && day.weekday === 0) {
+    if (month !== lastMonthLabeled && (i === 0 || day.weekday === 0)) {
       const label = document.createElement("span");
       label.textContent = MONTH_NAMES[month];
       label.style.gridColumn = weekIndex + 1;
@@ -75,6 +73,10 @@ async function loadContributions() {
     updatedEl.textContent = `updated ${formatTimeAgo(new Date(data.last_updated))}`;
 
     buildGrid(data.days);
+    requestAnimationFrame(() => {
+      const scrollEl = document.getElementById("cg-scroll");
+      scrollEl.scrollLeft = scrollEl.scrollWidth;
+    });
   } catch (err) {
     console.error(err);
     titleEl.textContent = "Couldn't load contribution data";
