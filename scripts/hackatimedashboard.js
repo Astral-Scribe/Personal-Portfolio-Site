@@ -4,9 +4,9 @@ const HD_DATA_URL = "./data/hackatime.json";
 
 const HD_TABS = [
   { key: "today", label: "Today" },
-  { key: "week", label: "Week" },
-  { key: "month", label: "Month" },
-  { key: "year", label: "Year" },
+  { key: "week", label: "This Week" },
+  { key: "month", label: "This Month" },
+  { key: "year", label: "This Year" },
   { key: "all_time", label: "All time" },
 ];
 
@@ -69,7 +69,7 @@ function renderCard() {
       `;
     });
   } else {
-    html += `<div class="hd-note">Per-project breakdown is only available for the all-time view — Hackatime's API doesn't support it for date-ranged queries.</div>`;
+    html += ``;
   }
 
   card.innerHTML = html;

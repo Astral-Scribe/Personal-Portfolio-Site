@@ -221,6 +221,7 @@ body {
   align-items: center;
   width: 85%;
   margin: 0 auto;
+  margin-bottom: 20px;
   .trackercard {
     background-color: var(--card-0);
     border-radius: 20px;
