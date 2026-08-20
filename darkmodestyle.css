@@ -283,6 +283,25 @@ body {
       #cg-scroll {
         overflow-x: auto;
         padding-bottom: 0.25rem;
+        scrollbar-width: thin;
+        scrollbar-color: var(--crust) transparent;
+      }
+      #cg-scroll::-webkit-scrollbar {
+        height: 6px;
+        border-radius: 10px;
+      }
+      #cg-scroll::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+      }
+      #cg-scroll::-webkit-scrollbar-thumb {
+        background: var(--card-0);
+        border-radius: 10px;
+        border-radius: 10px;
+      }
+      #cg-scroll::-webkit-scrollbar-thumb:hover {
+        background: var(--card-1);
+        border-radius: 10px;
       }
       #cg-months {
         display: grid;
