@@ -33,20 +33,20 @@
       </div>
       <div class="gallery">
         <div class="carousel" id="carousel">
-          <button class="carousel-btn prev" onclick="prevSlide()" aria-label="Previous image">&#10094;</button>
-          <div class="carousel-track-wrap">
-            <div class="carousel-track" id="carouselTrack">
-              <img src="./images/gallery/1.jpg" alt="Gallery image 1" class="carousel-img">
-              <img src="./images/gallery/2.jpg" alt="Gallery image 2" class="carousel-img">
-              <img src="./images/gallery/3.jpg" alt="Gallery image 3" class="carousel-img">
-              <img src="./images/gallery/4.jpg" alt="Gallery image 4" class="carousel-img">
-              <img src="./images/gallery/5.jpg" alt="Gallery image 5" class="carousel-img">
-              <img src="./images/gallery/6.jpg" alt="Gallery image 6" class="carousel-img">
+          <button class="carouselbtn prev" onclick="prevSlide()" aria-label="Previous image">&#10094;</button>
+          <div class="carouseltrackwrap">
+            <div class="carouseltrack" id="carouselTrack">
+              <img src="./images/gallery/galleryimg1.png" alt="A code editor with some javascript" class="carouselimg">
+              <img src="./images/gallery/galleryimg2.png" alt="A terminal response to a fastfetch command" class="carouselimg">
+              <img src="./images/gallery/galleryimg3.jpg" alt="Top view of freshly baked artisan bread on a wooden board with a bread knife" class="carouselimg">
+              <img src="./images/gallery/galleryimg4.jpg" alt="A close up of a fountain pen resting on an open notebook" class="carouselimg">
+              <img src="./images/gallery/galleryimg5.jpg" alt="A fantasy map drawn in pen" class="carouselimg">
+              <img src="./images/gallery/galleryimg6.jpg" alt="Gallery image 6" class="carouselimg">
             </div>
           </div>
-          <button class="carousel-btn next" onclick="nextSlide()" aria-label="Next image">&#10095;</button>
+          <button class="carouselbtn next" onclick="nextSlide()" aria-label="Next image">&#10095;</button>
         </div>
-        <div class="carousel-dots" id="carouselDots"></div>
+        <div class="carouseldots" id="carouselDots"></div>
       </div>
     </div>
     <div class="tools">
@@ -134,5 +134,6 @@
       </div>
     </div>
     <script src="./scripts/theme.js"></script>  
+    <script src="./scripts/gallery.js"></script>
   </body>
 </html>

@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // Extensions to try, in order, for each blog post's card image.
     const IMAGE_EXTENSIONS = ["jpg", "jpeg", "png", "gif"];
-    const FALLBACK_IMAGE = "images/icons/computer_icon.png";
+    const FALLBACK_IMAGE = "./images/icons/computer_icon.png";
 
     // Called from the <img> tag's onerror. Walks through IMAGE_EXTENSIONS
     // in order; when all have failed, falls back to a placeholder icon.
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     // load data and fetch from the JSON function
     async function loadData() {
-        jsonentries = await fetch("./projects/posts.json");
+        jsonentries = await fetch("./projects/projects.json");
         allEntries = await jsonentries.json();
         updateDisplay(allEntries);
     }
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function(){
              data-ext-index="0"
              onerror="handleImageError(this)">
         <div class="cardtags">${buildTagsHtml(entry.tags)}</div>
-        <h3 class="projecttitle"${entry.title}</h3>
+        <h3 class="projecttitle">${entry.title}</h3>
         <div class="description">${entry.description}</div>
         <div class="projectdate">${formattedDate}</div>
         </div>

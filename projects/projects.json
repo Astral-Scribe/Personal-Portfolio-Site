@@ -1,0 +1,44 @@
+[
+    {
+        "id": "14012024-A",
+        "title": "Weather Dashboard",
+        "description": "A responsive dashboard that pulls live forecast data and displays it with animated icons and a 5-day outlook.",
+        "tags": ["javascript", "css", "web-dev"],
+        "date": "2024-01-14T10:00:00Z"
+    },
+    {
+        "id": "03022024-A",
+        "title": "Recipe Finder",
+        "description": "Search and save recipes by ingredient, with filters for dietary restrictions and cooking time.",
+        "tags": ["python", "web-dev"],
+        "date": "2024-02-03T15:30:00Z"
+    },
+    {
+        "id": "27022024-A",
+        "title": "Task Manager",
+        "description": "A drag-and-drop kanban-style task board with local storage persistence and due-date reminders.",
+        "tags": ["javascript", "html", "web-dev"],
+        "date": "2024-02-27T09:45:00Z"
+    },
+    {
+        "id": "11032024-A",
+        "title": "Expense Tracker",
+        "description": "Log daily spending, categorize transactions, and view monthly totals with simple charts.",
+        "tags": ["python", "css"],
+        "date": "2024-03-11T13:20:00Z"
+    },
+    {
+        "id": "29032024-A",
+        "title": "Markdown Note Editor",
+        "description": "A lightweight in-browser note editor with live markdown preview and export to PDF.",
+        "tags": ["javascript", "web-dev"],
+        "date": "2024-03-29T17:05:00Z"
+    },
+    {
+        "id": "16042024-A",
+        "title": "Pixel Art Habit Tracker",
+        "description": "A playful habit tracker that grows a small pixel-art garden as daily streaks build up.",
+        "tags": ["html", "css", "javascript"],
+        "date": "2024-04-16T11:50:00Z"
+    }
+]

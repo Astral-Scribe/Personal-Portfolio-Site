@@ -102,6 +102,11 @@ body {
   margin: 2% auto;
   width: 85%;
   text-align: center;
+  img{
+    max-width: 70%;
+    min-width: 4%;
+    border-radius: 40px;
+  }
 }
 .footersection {
   .linksections {
@@ -285,6 +290,7 @@ body {
         padding-bottom: 0.25rem;
         scrollbar-width: thin;
         scrollbar-color: var(--crust) transparent;
+        border-radius: 10px;
       }
       #cg-scroll::-webkit-scrollbar {
         height: 6px;
@@ -296,7 +302,6 @@ body {
       }
       #cg-scroll::-webkit-scrollbar-thumb {
         background: var(--card-0);
-        border-radius: 10px;
         border-radius: 10px;
       }
       #cg-scroll::-webkit-scrollbar-thumb:hover {
@@ -474,12 +479,12 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
-    .carousel-track-wrap{
+    .carouseltrackwrap{
       overflow: hidden;
       border-radius: 20px;
       flex: 1;
     }
-      .carousel-track{
+      .carouseltrack{
         display: flex;
         transition: transform 0.4s ease;
         .carousel-img{
@@ -489,7 +494,7 @@ body {
           object-fit: cover;
         }
       }
-      .carousel-btn{
+      .carouselbtn{
         background-color: var(--card-0);
         color: var(--text);
         border: none;
@@ -504,7 +509,7 @@ body {
         }
       }
     }
-    .carousel-dots{
+    .carouseldots{
       display: flex;
       justify-content: center;
       gap: 6px;
@@ -766,7 +771,7 @@ body {
       align-items: center;
       gap: 0.35rem;
       font-size: 0.85rem;
-        padding: 0.3rem 0.8rem;
+      padding: 0.3rem 0.8rem;
       border-radius: 20px;
       background: var(--div-2);
       color: var(--text);
