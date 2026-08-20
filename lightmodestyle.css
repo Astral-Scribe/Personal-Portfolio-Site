@@ -716,9 +716,6 @@ body {
           color: var(--text);
           cursor: pointer;
         }
-        .cardtagpill {
-          cursor: default; /* not clickable on cards, just informational */
-        }
         .tagpill{
           .tagicon{
             width: 14px;
@@ -853,9 +850,6 @@ body {
           border-radius: 20px;
           background: var(--div-2);
           color: var(--text);
-        }
-        .cardtagpill {
-          cursor: default; /* not clickable on cards, just informational */
         }
         .tagpill{
           .tagicon{
