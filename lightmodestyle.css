@@ -316,6 +316,8 @@ body {
         color: var(--subtext-0);
         margin-bottom: 0.25rem;
         height: 14px;
+        gap: 3px;
+        text-align: right;
       }
       #cg-grid-wrap {
         display: flex;
