@@ -954,3 +954,118 @@ body {
     }   
   }
 }
+/*changes for other screen sizes*/
+/* Tablet: drop card grids from 3 columns to 2 */
+@media (max-width: 1024px) {
+  .blogarea .blogcardcontainer,
+  .projectssection .projectscardcontainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tools {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "sectionheader sectionheader"
+      "toolsection1 toolsection3"
+      "toolsection2 toolsection4"
+      ".            toolsection5";
+  }
+
+  .trackercards {
+    flex-wrap: wrap;
+    .trackercard {
+      width: 45%;
+    }
+  }
+}
+
+/* Mobile: everything drops to a single column */
+@media (max-width: 640px) {
+  .headersection {
+    .sitetitle {
+      font-size: 32px;
+    }
+    .navbar {
+      width: 92%;
+      scale: 100%;
+      flex-wrap: wrap;
+      .navbar_item {
+        flex: 1 1 40%;
+      }
+    }
+  }
+
+  .hero img {
+    max-width: 90%;
+  }
+
+  .blogarea .blogcardcontainer,
+  .projectssection .projectscardcontainer {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    grid-gap: 20px;
+  }
+
+  .overview {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sectionheader"
+      "overviewtext"
+      "gallery";
+    .overviewtext,
+    .gallery {
+      margin: 15px 0;
+    }
+  }
+
+  .gallery .carousel .carouseltrack .carouselimg {
+    height: 160px;
+  }
+
+  .tools {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sectionheader"
+      "toolsection1"
+      "toolsection2"
+      "toolsection3"
+      "toolsection4"
+      "toolsection5";
+    ul {
+      margin: 15px 0 !important;
+    }
+  }
+
+  .trackercards {
+    flex-direction: column;
+    .trackercard {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  }
+
+  .contactsection {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contactform"
+      "contactinfo";
+    .contactform,
+    .contactinfo {
+      margin: 15px 0;
+    }
+    .formgroup {
+      grid-template-columns: 1fr !important;
+    }
+  }
+
+  .footersection {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "linksections"
+      "copyright"
+      "themeswitcher";
+    .themeswitcher {
+      margin: 10px auto;
+    }
+  }
+}
