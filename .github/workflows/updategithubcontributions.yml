@@ -30,3 +30,6 @@ jobs:
         with:
           commit_message: "chore: update github contributions"
           file_pattern: data/github-contributions.json
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "41898282+github-actions[bot]@users.noreply.github.com"
+
