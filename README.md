@@ -18,7 +18,6 @@ fun project.
 
 The contribution graph and Hackatime dashboard run on scheduled GitHub Actions rather than
 live client-side calls, since both need credentials that can't safely sit in browser JS.
-Setup steps for those are in [`SETUP.md`](./SETUP.md).
 
 ## Info
 
