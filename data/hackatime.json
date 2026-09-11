@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10T22:24:53.531Z",
+  "last_updated": "2026-09-11T04:15:54.448Z",
   "today": {
     "total_seconds": 0,
     "human": "0h 0m"
@@ -9,8 +9,8 @@
     "human": "0h 0m"
   },
   "month": {
-    "total_seconds": 12729,
-    "human": "3h 32m"
+    "total_seconds": 0,
+    "human": "0h 0m"
   },
   "year": {
     "total_seconds": 32229,
