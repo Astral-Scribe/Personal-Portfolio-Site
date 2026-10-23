@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-10-22T23:11:02.112Z",
+  "last_updated": "2026-10-23T04:24:44.202Z",
   "today": {
-    "total_seconds": 160,
-    "human": "0h 2m"
+    "total_seconds": 1849,
+    "human": "0h 30m"
   },
   "week": {
-    "total_seconds": 160,
-    "human": "0h 2m"
+    "total_seconds": 2164,
+    "human": "0h 36m"
   },
   "month": {
-    "total_seconds": 160,
-    "human": "0h 2m"
+    "total_seconds": 2164,
+    "human": "0h 36m"
   },
   "year": {
-    "total_seconds": 33272,
-    "human": "9h 14m"
+    "total_seconds": 35276,
+    "human": "9h 47m"
   },
   "all_time": {
-    "total_seconds": 33272,
-    "human": "9h 14m 32s",
+    "total_seconds": 35276,
+    "human": "9h 47m 56s",
     "top_projects": [
       {
         "name": "NCEA-Level-1-Computer-Science",
@@ -36,14 +36,14 @@
         "human": "34m"
       },
       {
+        "name": "Jame-Gam-Game-Jam-Game",
+        "seconds": 1849,
+        "human": "30m"
+      },
+      {
         "name": "metroidvania-rpg-game",
         "seconds": 1585,
         "human": "26m"
-      },
-      {
-        "name": "html stuff",
-        "seconds": 1338,
-        "human": "22m"
       }
     ]
   }
