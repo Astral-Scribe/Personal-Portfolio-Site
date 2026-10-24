@@ -1,24 +1,24 @@
 {
-  "last_updated": "2026-10-24T12:35:29.801Z",
+  "last_updated": "2026-10-24T18:42:18.265Z",
   "today": {
-    "total_seconds": 2760,
-    "human": "0h 46m"
+    "total_seconds": 3020,
+    "human": "0h 50m"
   },
   "week": {
-    "total_seconds": 17001,
-    "human": "4h 43m"
+    "total_seconds": 17260,
+    "human": "4h 47m"
   },
   "month": {
-    "total_seconds": 17001,
-    "human": "4h 43m"
+    "total_seconds": 17260,
+    "human": "4h 47m"
   },
   "year": {
-    "total_seconds": 50113,
-    "human": "13h 55m"
+    "total_seconds": 50373,
+    "human": "13h 59m"
   },
   "all_time": {
-    "total_seconds": 50113,
-    "human": "13h 55m 13s",
+    "total_seconds": 50373,
+    "human": "13h 59m 33s",
     "top_projects": [
       {
         "name": "NCEA-Level-1-Computer-Science",
@@ -27,8 +27,8 @@
       },
       {
         "name": "Jame-Gam-Game-Jam-Game",
-        "seconds": 16686,
-        "human": "4h 38m"
+        "seconds": 16946,
+        "human": "4h 42m"
       },
       {
         "name": "shops",
