@@ -1,29 +1,29 @@
 {
-  "last_updated": "2026-10-25T04:18:23.434Z",
+  "last_updated": "2026-10-25T13:07:18.649Z",
   "today": {
-    "total_seconds": 10983,
-    "human": "3h 3m"
+    "total_seconds": 22440,
+    "human": "6h 14m"
   },
   "week": {
-    "total_seconds": 31122,
-    "human": "8h 38m"
+    "total_seconds": 42579,
+    "human": "11h 49m"
   },
   "month": {
-    "total_seconds": 31122,
-    "human": "8h 38m"
+    "total_seconds": 42579,
+    "human": "11h 49m"
   },
   "year": {
-    "total_seconds": 64234,
-    "human": "17h 50m"
+    "total_seconds": 75692,
+    "human": "21h 1m"
   },
   "all_time": {
-    "total_seconds": 64234,
-    "human": "17h 50m 34s",
+    "total_seconds": 75692,
+    "human": "21h 1m 32s",
     "top_projects": [
       {
         "name": "Jame-Gam-Game-Jam-Game",
-        "seconds": 30807,
-        "human": "8h 33m"
+        "seconds": 42265,
+        "human": "11h 44m"
       },
       {
         "name": "NCEA-Level-1-Computer-Science",
